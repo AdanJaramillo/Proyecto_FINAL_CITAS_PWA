@@ -31,6 +31,7 @@ export default function Account({ session }) {
                 setWebsite(data.website);
                 setAvatarUrl(data.avatar_url);
             }
+            console.log(data)
         } catch (error) {
             alert(error.message);
         } finally {
