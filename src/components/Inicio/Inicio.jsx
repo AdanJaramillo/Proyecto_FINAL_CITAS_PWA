@@ -62,18 +62,18 @@ export default function Inicio({session}) {
             
              <Button variant="contained">
             < Link to="/NewCita">
-                 {t("ADD REMINDER")}
+                 {t("ADD APPOINTMENT")}
              </Link>
         
                 
                 
              </Button>
-             <Button href='https://github.com/AdanJaramillo/AWP-Tarea-Unidad-II---AWP-de-recordatorios'> Github </Button>
+             <Button variant="contained" size="small" color="warning" href='https://github.com/AdanJaramillo/Proyecto_FINAL_CITAS_PWA'> Github </Button>
 
-        <Button className={`App-link ${i18n.language === "es" ? "selected" : "unselected"}`}onClick={() => changeLaguage("es")}>
+        <Button variant="contained" size="small" color="warning" className={`App-link ${i18n.language === "es" ? "selected" : "unselected"}`}onClick={() => changeLaguage("es")}>
             MX
           </Button>
-          <Button className={`App-link ${i18n.language === "en" ? "selected" : "unselected"}`}onClick={() => changeLaguage("en")}>
+          <Button variant="contained" size="small" color="warning" className={`App-link ${i18n.language === "en" ? "selected" : "unselected"}`}onClick={() => changeLaguage("en")}>
             US
             </Button>
             
@@ -95,7 +95,7 @@ export default function Inicio({session}) {
       {t("EDIT")}
       </Link>
       </Button> 
-      <Button variant="contained" size="small" color="warning"
+      <Button variant="contained" size="small" color="error"
     onClick={ () => handleDelete(citas.id)}>
     <Link to="/">{t("DELETE")}</Link>
     </Button>

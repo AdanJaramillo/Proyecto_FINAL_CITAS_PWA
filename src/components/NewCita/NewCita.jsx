@@ -7,6 +7,7 @@ import { Box } from "@mui/system";
 
 
 
+
 export default function CitaAdd({session}) {
     // const [id, setid] = useState(null);
     const [loading, setLoading] = useState(false);
@@ -14,6 +15,7 @@ export default function CitaAdd({session}) {
     const [fecharegistro, setfecharegistro] = useState(null);
     const [contenido, setContenido] = useState(null);
     const [fechacita, setfechacita] = useState(null);
+   
     
 
 
@@ -49,7 +51,6 @@ export default function CitaAdd({session}) {
     }
 
 
-
     return (
         
         <div>
@@ -66,7 +67,7 @@ export default function CitaAdd({session}) {
                 />
             </div>
             <div>
-                <label htmlFor="nombrepaciente">Title</label>
+                <label htmlFor="nombrepaciente">NAME OF PATIENT</label>
                 <input
                     id="nombrepaciente"
                     type="text"
@@ -75,7 +76,7 @@ export default function CitaAdd({session}) {
                 />
             </div>
             <div>
-                <label htmlFor="fecharegistro">Creation date</label>
+                <label htmlFor="fecharegistro">REGISTRATION DATE</label>
                 <input
                     id="fecharegistro"
                     type="Date"
@@ -84,7 +85,7 @@ export default function CitaAdd({session}) {
                 />
             </div>
             <div>
-                <label htmlFor="contenido">Contents</label>
+                <label htmlFor="contenido">SYMPTOM</label>
                 <input
                     id="contenido"
                     type="text"
@@ -93,7 +94,7 @@ export default function CitaAdd({session}) {
                 />
             </div>
             <div>
-                <label htmlFor="fechacita">Reminder Date</label>
+                <label htmlFor="fechacita">DAY OF THE APPOINTMENT</label>
                 <input
                     id="fechacita"
                     type="Date"
@@ -101,7 +102,9 @@ export default function CitaAdd({session}) {
                     onChange={(e) => setfechacita(e.target.value)}
                 />
             </div>
-           
+
+            <div></div>
+            
 
             <div>
                 <Button

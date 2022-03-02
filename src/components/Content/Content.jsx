@@ -19,27 +19,27 @@ export default function MultiActionAreaCard({ id, nombrepaciente, fecharegistro,
           
           <Typography gutterBottom variant="body2" component="div" color="red">
           {/* color="text.secondary" */}
-          {t("NAME")}
+          {t("NAME OF PATIENT")}
             <Typography variant="body2" color="Black">
               {nombrepaciente} 
               </Typography>
           </Typography>
           
           <Typography gutterBottom variant="body2" component="div" color="red">
-          {t("CONTENT")}
+          {t("SYMPTOM")}
             <Typography variant="body2" color="Black">
               {contenido} 
               </Typography>
           </Typography>
 
           <Typography variant="body2" color="red">
-          {t("CREATION DATE")}
+          {t("REGISTRATION DATE")}
             <Typography variant="body2" color="Black">
               {fecharegistro} 
               </Typography>
           </Typography>
           <Typography variant="body2" color="red">
-          {t("REMINDER DATE")}
+          {t("DAY OF THE APPOINTMENT")}
             <Typography variant="body2" color="Black">
               {fechacita} 
               </Typography>

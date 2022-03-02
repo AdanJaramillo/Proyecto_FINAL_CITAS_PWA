@@ -2,7 +2,7 @@ import React from 'react';
 import { AppBar, Toolbar, Typography, Avatar, Tooltip, Box, IconButton, Button, Grid } from '@mui/material';
 import { supabase } from "../../config/supabaseClient";
 import { Link } from 'react-router-dom';
-import { blue, blueGrey } from '@mui/material/colors';
+import { blueGrey} from '@mui/material/colors';
 import { useTranslation } from "react-i18next";
 
 
@@ -18,8 +18,8 @@ const Navbar = () => {
         <div>
             
             <Box sx={{ flexGrow: 1 }}>
-                {/* <AppBar position="static"  color='primary'> */}
-                <AppBar position="fixed" sx={{ bgcolor: blueGrey[700] }}>
+                <AppBar position="fixed"  color='primary'>
+                {/*<AppBar position="fixed" sx={{ bgcolor: blueGrey[700] }}>*/}
 
                     <Toolbar>
                         <IconButton
@@ -32,12 +32,12 @@ const Navbar = () => {
 
                         </IconButton>
                         <Typography variant='h6' component="div" sx={{ flexGrow: 1 }}>
-                        {t("WELCOME")}
+                        {t("Veterinary / Proyect")}
                         </Typography>
 
                         <Button color="inherit" >
                                 <Link to="/">
-                                {t("HOME")}
+                                {t("MY APPOINTMENTS")}
                                 </Link>
                                 </Button>
 
@@ -60,7 +60,7 @@ const Navbar = () => {
                     
                         <Tooltip title="Account">
                             <IconButton sx={{ p: 0 }}>
-                            <Avatar sx={{ bgcolor: blue[700] }} variant="square">
+                            <Avatar sx={{ bgcolor: blueGrey[700] }} variant="square">
                                 AJ
                             </Avatar>
                             </IconButton>
