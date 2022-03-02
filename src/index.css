@@ -183,7 +183,7 @@ input {
     border: var(--custom-border);
     padding: 8px;
     font-size: 0.9rem;
-    background-color: var(--custom-bg-color);
+    background-color: rgb(88, 88, 88);
     color: var(--custom-color);
 }
 
