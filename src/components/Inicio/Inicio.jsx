@@ -70,6 +70,11 @@ export default function Inicio({ session }) {
 
 
             </Button>
+             <Button variant="contained">
+            < Link to="/Calendario">
+                 {t("CALENDAR")}
+             </Link>
+             </Button>
             <Button variant="contained" size="small" color="warning" href='https://github.com/AdanJaramillo/Proyecto_FINAL_CITAS_PWA'> Github </Button>
 
             <Button variant="contained" size="small" color="warning" className={`App-link ${i18n.language === "es" ? "selected" : "unselected"}`} onClick={() => changeLaguage("es")}>

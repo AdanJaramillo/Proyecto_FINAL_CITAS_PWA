@@ -6,6 +6,7 @@ import Account from "../Account";
 import Cita from "../Cita";
 import Inicio from "../Inicio";
 import NewCita from "../NewCita";
+import Calendario from "../Calendario";
 
 
 
@@ -96,6 +97,7 @@ export default function Rutas({ session }) {
                         <Route path='/Account' element={<Account key={session.user.id} session={session}  />}/>
                         <Route path='/Cita/:id' element={<Cita key={session.user.id} session={session}  />}/>
                         <Route path='/NewCita' element={<NewCita key={session.user.id} session={session}/>}/>
+                        <Route path='/Calendario' element={<Calendario key={session.user.id} session={session}/>}/>
                         <Route path='/' element={<Inicio key={session.user.id} session={session}/>}/>
             </Routes>
 

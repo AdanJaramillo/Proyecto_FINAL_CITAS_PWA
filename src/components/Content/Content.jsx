@@ -47,7 +47,6 @@ export default function MultiActionAreaCard({ id, nombrepaciente, fecharegistro,
             <Typography variant="body2" color="Black">
 
              <img src={url} alt="avatar_url" 
-          alt="Avatar"
           className="avatar image"
           style={{ height: "128px" , width: "128px"  }}/> 
               </Typography>
